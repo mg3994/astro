@@ -84,8 +84,8 @@ class HomePage extends StatelessWidget {
                         Padding(
                           padding: EdgeInsets.symmetric(horizontal: 10),
                           child: InkWell(
-                            onTap: () =>
-                                _launchInBrowser("https://wa.me/918247625696"),
+                            onTap: () => _launchInBrowser(
+                                "https://api.whatsapp.com/send?phone=+918247625696&text=Hi, I'm here from Palmistry Live Readings"),
                             child: Container(
                               decoration: BoxDecoration(
                                 color: Colors.yellow.shade800,
@@ -140,7 +140,7 @@ class HomePage extends StatelessWidget {
                     ),
                     ItemsWidget(
                       onTap: () => _launchInBrowser(
-                          "https://docs.google.com/document/d/1Tu6FFyv8mb9AIKXQRXg2yFI_JSKehmpsvSOSIESEiSY/edit?usp=sharing"),
+                          "https://sites.google.com/view/palmistry-live-readings"),
                       titleText: "Policies",
                       imagePath: "assets/images/policy.png",
                       color: Colors.green,
