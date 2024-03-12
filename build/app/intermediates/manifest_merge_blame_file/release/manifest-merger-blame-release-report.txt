@@ -1,8 +1,8 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="com.palmistrylive.readings"
-4    android:versionCode="4"
-5    android:versionName="4.0.0" >
+4    android:versionCode="5"
+5    android:versionName="5.0.0" >
 6    <!--
 7 Required to query activities that can process text, see:
 8         https://developer.android.com/training/package-visibility?hl=en and
@@ -36,145 +36,144 @@
 29-->D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:5:5-36
 29-->D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:5:11-33
 30        </intent>
-31        <intent>
-31-->D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:7:3-9:12
-32            <action android:name="android.support.customtabs.action.CustomTabsService" />
-32-->D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:8:5-82
-32-->D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:8:13-79
-33        </intent>
-34    </queries>
-35
-36    <permission
-36-->[androidx.core:core:1.10.1] C:\Users\DEEPAK SHARMA\.gradle\caches\transforms-3\0b9c903fef8d2eb2a269c36999ef4a74\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
-37        android:name="com.palmistrylive.readings.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-37-->[androidx.core:core:1.10.1] C:\Users\DEEPAK SHARMA\.gradle\caches\transforms-3\0b9c903fef8d2eb2a269c36999ef4a74\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
-38        android:protectionLevel="signature" />
-38-->[androidx.core:core:1.10.1] C:\Users\DEEPAK SHARMA\.gradle\caches\transforms-3\0b9c903fef8d2eb2a269c36999ef4a74\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
-39
-40    <uses-permission android:name="com.palmistrylive.readings.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-40-->[androidx.core:core:1.10.1] C:\Users\DEEPAK SHARMA\.gradle\caches\transforms-3\0b9c903fef8d2eb2a269c36999ef4a74\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
-40-->[androidx.core:core:1.10.1] C:\Users\DEEPAK SHARMA\.gradle\caches\transforms-3\0b9c903fef8d2eb2a269c36999ef4a74\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
+31        <!--
+32  <intent>
+33    <action android:name="android.support.customtabs.action.CustomTabsService" />
+34  </intent>
+35        -->
+36    </queries>
+37
+38    <permission
+38-->[androidx.core:core:1.10.1] C:\Users\DEEPAK SHARMA\.gradle\caches\transforms-3\0b9c903fef8d2eb2a269c36999ef4a74\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
+39        android:name="com.palmistrylive.readings.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+39-->[androidx.core:core:1.10.1] C:\Users\DEEPAK SHARMA\.gradle\caches\transforms-3\0b9c903fef8d2eb2a269c36999ef4a74\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
+40        android:protectionLevel="signature" />
+40-->[androidx.core:core:1.10.1] C:\Users\DEEPAK SHARMA\.gradle\caches\transforms-3\0b9c903fef8d2eb2a269c36999ef4a74\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
 41
-42    <application
-43        android:name="android.app.Application"
-43-->D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:14:9-42
-44        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-44-->[androidx.core:core:1.10.1] C:\Users\DEEPAK SHARMA\.gradle\caches\transforms-3\0b9c903fef8d2eb2a269c36999ef4a74\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
-45        android:icon="@mipmap/ic_launcher"
-45-->D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:15:9-43
-46        android:label="Palmistry Live Readings" >
-46-->D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:13:9-48
-47        <activity
-47-->D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:16:9-36:20
-48            android:name="com.palmistrylive.readings.MainActivity"
-48-->D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:17:13-41
-49            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-49-->D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:21:13-163
-50            android:exported="true"
-50-->D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:18:13-36
-51            android:hardwareAccelerated="true"
-51-->D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:22:13-47
-52            android:launchMode="singleTop"
-52-->D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:19:13-43
-53            android:theme="@style/LaunchTheme"
-53-->D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:20:13-47
-54            android:windowSoftInputMode="adjustResize" >
-54-->D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:23:13-55
-55
-56            <!--
-57                 Specifies an Android theme to apply to this Activity as soon as
-58                 the Android process has started. This theme is visible to the user
-59                 while the Flutter UI initializes. After that, this theme continues
-60                 to determine the Window background behind the Flutter UI.
-61            -->
-62            <meta-data
-62-->D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:28:13-31:17
-63                android:name="io.flutter.embedding.android.NormalTheme"
-63-->D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:29:15-70
-64                android:resource="@style/NormalTheme" />
-64-->D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:30:15-52
-65
-66            <intent-filter>
-66-->D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:32:13-35:29
-67                <action android:name="android.intent.action.MAIN" />
-67-->D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:33:17-68
-67-->D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:33:25-66
-68
-69                <category android:name="android.intent.category.LAUNCHER" />
-69-->D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:34:17-76
-69-->D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:34:27-74
-70            </intent-filter>
-71        </activity>
-72        <!--
-73             Don't delete the meta-data below.
-74             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-75        -->
-76        <meta-data
-76-->D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:39:9-41:33
-77            android:name="flutterEmbedding"
-77-->D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:40:13-44
-78            android:value="2" />
-78-->D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:41:13-30
-79        <!--
-80           Declares a provider which allows us to store files to share in
-81           '.../caches/share_plus' and grant the receiving action access
-82        -->
-83        <provider
-83-->[:share_plus] D:\PublishMe\readings\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:15:9-23:20
-84            android:name="dev.fluttercommunity.plus.share.ShareFileProvider"
-84-->[:share_plus] D:\PublishMe\readings\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:16:13-77
-85            android:authorities="com.palmistrylive.readings.flutter.share_provider"
-85-->[:share_plus] D:\PublishMe\readings\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:17:13-74
-86            android:exported="false"
-86-->[:share_plus] D:\PublishMe\readings\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:18:13-37
-87            android:grantUriPermissions="true" >
-87-->[:share_plus] D:\PublishMe\readings\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:19:13-47
-88            <meta-data
-88-->[:share_plus] D:\PublishMe\readings\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:20:13-22:68
-89                android:name="android.support.FILE_PROVIDER_PATHS"
-89-->[:share_plus] D:\PublishMe\readings\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:21:17-67
-90                android:resource="@xml/flutter_share_file_paths" />
-90-->[:share_plus] D:\PublishMe\readings\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:22:17-65
-91        </provider>
-92        <!--
-93           This manifest declared broadcast receiver allows us to use an explicit
-94           Intent when creating a PendingItent to be informed of the user's choice
-95        -->
-96        <receiver
-96-->[:share_plus] D:\PublishMe\readings\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:28:9-34:20
-97            android:name="dev.fluttercommunity.plus.share.SharePlusPendingIntent"
-97-->[:share_plus] D:\PublishMe\readings\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:29:13-82
-98            android:exported="false" >
-98-->[:share_plus] D:\PublishMe\readings\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:30:13-37
-99            <intent-filter>
-99-->[:share_plus] D:\PublishMe\readings\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:31:13-33:29
-100                <action android:name="EXTRA_CHOSEN_COMPONENT" />
-100-->[:share_plus] D:\PublishMe\readings\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:32:17-65
-100-->[:share_plus] D:\PublishMe\readings\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:32:25-62
-101            </intent-filter>
-102        </receiver>
-103
-104        <activity
-104-->[:url_launcher_android] D:\PublishMe\readings\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-13:74
-105            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
-105-->[:url_launcher_android] D:\PublishMe\readings\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-74
-106            android:exported="false"
-106-->[:url_launcher_android] D:\PublishMe\readings\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-37
-107            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-107-->[:url_launcher_android] D:\PublishMe\readings\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-71
-108
-109        <uses-library
-109-->[androidx.window:window:1.0.0-beta04] C:\Users\DEEPAK SHARMA\.gradle\caches\transforms-3\032f4dff274e516110d9363a9793a3e3\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
-110            android:name="androidx.window.extensions"
-110-->[androidx.window:window:1.0.0-beta04] C:\Users\DEEPAK SHARMA\.gradle\caches\transforms-3\032f4dff274e516110d9363a9793a3e3\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
-111            android:required="false" />
-111-->[androidx.window:window:1.0.0-beta04] C:\Users\DEEPAK SHARMA\.gradle\caches\transforms-3\032f4dff274e516110d9363a9793a3e3\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
-112        <uses-library
-112-->[androidx.window:window:1.0.0-beta04] C:\Users\DEEPAK SHARMA\.gradle\caches\transforms-3\032f4dff274e516110d9363a9793a3e3\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
-113            android:name="androidx.window.sidecar"
-113-->[androidx.window:window:1.0.0-beta04] C:\Users\DEEPAK SHARMA\.gradle\caches\transforms-3\032f4dff274e516110d9363a9793a3e3\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
-114            android:required="false" />
-114-->[androidx.window:window:1.0.0-beta04] C:\Users\DEEPAK SHARMA\.gradle\caches\transforms-3\032f4dff274e516110d9363a9793a3e3\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
-115    </application>
-116
-117</manifest>
+42    <uses-permission android:name="com.palmistrylive.readings.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+42-->[androidx.core:core:1.10.1] C:\Users\DEEPAK SHARMA\.gradle\caches\transforms-3\0b9c903fef8d2eb2a269c36999ef4a74\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
+42-->[androidx.core:core:1.10.1] C:\Users\DEEPAK SHARMA\.gradle\caches\transforms-3\0b9c903fef8d2eb2a269c36999ef4a74\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
+43
+44    <application
+45        android:name="android.app.Application"
+45-->D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:14:9-42
+46        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+46-->[androidx.core:core:1.10.1] C:\Users\DEEPAK SHARMA\.gradle\caches\transforms-3\0b9c903fef8d2eb2a269c36999ef4a74\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
+47        android:icon="@mipmap/ic_launcher"
+47-->D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:15:9-43
+48        android:label="Palmistry Live Readings" >
+48-->D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:13:9-48
+49        <activity
+49-->D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:16:9-36:20
+50            android:name="com.palmistrylive.readings.MainActivity"
+50-->D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:17:13-41
+51            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+51-->D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:21:13-163
+52            android:exported="true"
+52-->D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:18:13-36
+53            android:hardwareAccelerated="true"
+53-->D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:22:13-47
+54            android:launchMode="singleTop"
+54-->D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:19:13-43
+55            android:theme="@style/LaunchTheme"
+55-->D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:20:13-47
+56            android:windowSoftInputMode="adjustResize" >
+56-->D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:23:13-55
+57
+58            <!--
+59                 Specifies an Android theme to apply to this Activity as soon as
+60                 the Android process has started. This theme is visible to the user
+61                 while the Flutter UI initializes. After that, this theme continues
+62                 to determine the Window background behind the Flutter UI.
+63            -->
+64            <meta-data
+64-->D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:28:13-31:17
+65                android:name="io.flutter.embedding.android.NormalTheme"
+65-->D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:29:15-70
+66                android:resource="@style/NormalTheme" />
+66-->D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:30:15-52
+67
+68            <intent-filter>
+68-->D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:32:13-35:29
+69                <action android:name="android.intent.action.MAIN" />
+69-->D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:33:17-68
+69-->D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:33:25-66
+70
+71                <category android:name="android.intent.category.LAUNCHER" />
+71-->D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:34:17-76
+71-->D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:34:27-74
+72            </intent-filter>
+73        </activity>
+74        <!--
+75             Don't delete the meta-data below.
+76             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+77        -->
+78        <meta-data
+78-->D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:39:9-41:33
+79            android:name="flutterEmbedding"
+79-->D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:40:13-44
+80            android:value="2" />
+80-->D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:41:13-30
+81        <!--
+82           Declares a provider which allows us to store files to share in
+83           '.../caches/share_plus' and grant the receiving action access
+84        -->
+85        <provider
+85-->[:share_plus] D:\PublishMe\readings\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:15:9-23:20
+86            android:name="dev.fluttercommunity.plus.share.ShareFileProvider"
+86-->[:share_plus] D:\PublishMe\readings\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:16:13-77
+87            android:authorities="com.palmistrylive.readings.flutter.share_provider"
+87-->[:share_plus] D:\PublishMe\readings\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:17:13-74
+88            android:exported="false"
+88-->[:share_plus] D:\PublishMe\readings\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:18:13-37
+89            android:grantUriPermissions="true" >
+89-->[:share_plus] D:\PublishMe\readings\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:19:13-47
+90            <meta-data
+90-->[:share_plus] D:\PublishMe\readings\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:20:13-22:68
+91                android:name="android.support.FILE_PROVIDER_PATHS"
+91-->[:share_plus] D:\PublishMe\readings\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:21:17-67
+92                android:resource="@xml/flutter_share_file_paths" />
+92-->[:share_plus] D:\PublishMe\readings\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:22:17-65
+93        </provider>
+94        <!--
+95           This manifest declared broadcast receiver allows us to use an explicit
+96           Intent when creating a PendingItent to be informed of the user's choice
+97        -->
+98        <receiver
+98-->[:share_plus] D:\PublishMe\readings\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:28:9-34:20
+99            android:name="dev.fluttercommunity.plus.share.SharePlusPendingIntent"
+99-->[:share_plus] D:\PublishMe\readings\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:29:13-82
+100            android:exported="false" >
+100-->[:share_plus] D:\PublishMe\readings\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:30:13-37
+101            <intent-filter>
+101-->[:share_plus] D:\PublishMe\readings\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:31:13-33:29
+102                <action android:name="EXTRA_CHOSEN_COMPONENT" />
+102-->[:share_plus] D:\PublishMe\readings\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:32:17-65
+102-->[:share_plus] D:\PublishMe\readings\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:32:25-62
+103            </intent-filter>
+104        </receiver>
+105
+106        <activity
+106-->[:url_launcher_android] D:\PublishMe\readings\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-13:74
+107            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+107-->[:url_launcher_android] D:\PublishMe\readings\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-74
+108            android:exported="false"
+108-->[:url_launcher_android] D:\PublishMe\readings\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-37
+109            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+109-->[:url_launcher_android] D:\PublishMe\readings\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-71
+110
+111        <uses-library
+111-->[androidx.window:window:1.0.0-beta04] C:\Users\DEEPAK SHARMA\.gradle\caches\transforms-3\032f4dff274e516110d9363a9793a3e3\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+112            android:name="androidx.window.extensions"
+112-->[androidx.window:window:1.0.0-beta04] C:\Users\DEEPAK SHARMA\.gradle\caches\transforms-3\032f4dff274e516110d9363a9793a3e3\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+113            android:required="false" />
+113-->[androidx.window:window:1.0.0-beta04] C:\Users\DEEPAK SHARMA\.gradle\caches\transforms-3\032f4dff274e516110d9363a9793a3e3\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+114        <uses-library
+114-->[androidx.window:window:1.0.0-beta04] C:\Users\DEEPAK SHARMA\.gradle\caches\transforms-3\032f4dff274e516110d9363a9793a3e3\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+115            android:name="androidx.window.sidecar"
+115-->[androidx.window:window:1.0.0-beta04] C:\Users\DEEPAK SHARMA\.gradle\caches\transforms-3\032f4dff274e516110d9363a9793a3e3\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+116            android:required="false" />
+116-->[androidx.window:window:1.0.0-beta04] C:\Users\DEEPAK SHARMA\.gradle\caches\transforms-3\032f4dff274e516110d9363a9793a3e3\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+117    </application>
+118
+119</manifest>

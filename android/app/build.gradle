@@ -14,12 +14,12 @@ if (localPropertiesFile.exists()) {
 
 def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
 if (flutterVersionCode == null) {
-    flutterVersionCode = '2'
+    flutterVersionCode = '5'
 }
 
 def flutterVersionName = localProperties.getProperty('flutter.versionName')
 if (flutterVersionName == null) {
-    flutterVersionName = '2.0'
+    flutterVersionName = '5.0'
 }
 
 android {
@@ -47,8 +47,8 @@ android {
         // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-gradle-build-configuration.
         minSdkVersion flutter.minSdkVersion
         targetSdkVersion 34 //flutter.targetSdkVersion
-        versionCode 4 //flutterVersionCode.toInteger()
-        versionName "4.0.0" //flutterVersionName
+        versionCode 5 //flutterVersionCode.toInteger()
+        versionName "5.0.0" //flutterVersionName
     }
 
      signingConfigs {

@@ -78,12 +78,6 @@ data
 ADDED from D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:5:5-36
 	android:scheme
 		ADDED from D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:5:11-33
-intent#action:name:android.support.customtabs.action.CustomTabsService
-ADDED from D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:7:3-9:12
-action#android.support.customtabs.action.CustomTabsService
-ADDED from D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:8:5-82
-	android:name
-		ADDED from D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml:8:13-79
 uses-sdk
 INJECTED from D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\PublishMe\readings\android\app\src\main\AndroidManifest.xml
